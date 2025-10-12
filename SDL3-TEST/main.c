@@ -1,22 +1,15 @@
 #include <SDL3/SDL.h>
-#include <stdatomic.h>
 #include <stdio.h>
 
 int main(void) {
-  // Init returns true on success, false on failure (SDL3)
-  if (!SDL_Init(SDL_INIT_VIDEO)) {
-    const char *err = SDL_GetError();
-    fprintf(stderr, "SDL_Init failed: %s\n",
-            err && *err ? err : "(no message)");
+  if (SDL_Init(SDL_INIT_VIDEO) != 0) {
+    printf("SDL Init Error: %s\n", SDL_GetError());
     return 1;
   }
 
-  SDL_Window *win =
-      SDL_CreateWindow("SDL3 test", 640, 480, SDL_WINDOW_RESIZABLE);
+  SDL_Window *win = SDL_CreateWindow("Hello SDL3", 640, 480, 0);
   if (!win) {
-    const char *err = SDL_GetError();
-    fprintf(stderr, "SDL_CreateWindow Error: %s\n",
-            err && *err ? err : "(no message)");
+    printf("SDL CreateWindow Error: %s\n", SDL_GetError());
     SDL_Quit();
     return 1;
   }

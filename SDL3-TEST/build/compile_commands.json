@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/Users/santana/projects-umbrella/learning-lab/SDL3-TEST/build",
+  "command": "/usr/bin/cc  -I/opt/homebrew/include -std=gnu17 -arch arm64 -o CMakeFiles/sdl3_test.dir/main.c.o -c /Users/santana/projects-umbrella/learning-lab/SDL3-TEST/main.c",
+  "file": "/Users/santana/projects-umbrella/learning-lab/SDL3-TEST/main.c",
+  "output": "CMakeFiles/sdl3_test.dir/main.c.o"
+}
+]

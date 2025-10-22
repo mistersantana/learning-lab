@@ -1,0 +1,23 @@
+.container {
+  position: relative;
+  height: 160px;
+  border: 1px solid #ddd;
+}
+.box {
+  width: 60px;
+  height: 60px;
+  background: #fde68a;
+  border: 1px solid #f59e0b;
+}
+
+/* Add positioning rules for .one and .two */
+.one {
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+.two {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}

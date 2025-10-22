@@ -1,0 +1,23 @@
+/* Universal selector */
+/* Every element on the page */
+* {
+  box-sizing: border-box;
+}
+
+/* Element selector */
+/* All <p> tags */
+p {
+  color: #333;
+}
+
+/* Class selector */
+/* Any element with class="title" */
+.title {
+  background: #eef2ff;
+}
+
+/* ID selector */
+/* The single element with id="mainTitle" */
+#mainTitle {
+  padding: 8px;
+}

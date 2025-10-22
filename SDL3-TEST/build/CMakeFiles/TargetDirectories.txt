@@ -1,3 +1,0 @@
-/Users/santana/projects-umbrella/learning-lab/SDL3-TEST/build/CMakeFiles/sdl3_test.dir
-/Users/santana/projects-umbrella/learning-lab/SDL3-TEST/build/CMakeFiles/edit_cache.dir
-/Users/santana/projects-umbrella/learning-lab/SDL3-TEST/build/CMakeFiles/rebuild_cache.dir

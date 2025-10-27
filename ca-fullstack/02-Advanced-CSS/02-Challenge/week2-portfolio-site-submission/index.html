@@ -14,93 +14,107 @@
   <a class="skip-link" href="#main">Skip to main content</a>
 
   <header>
-    <div class="brand">
-      <a href="/"><strong>Mr. Santana</strong></a>
-      <p>Gamer. Dev. Builder.</p>
-    </div>
+    <div class="container">
+      <div class="brand">
+        <a href="/"><strong>Mr. Santana</strong></a>
+        <p>Gamer. Dev. Builder.</p>
+      </div>
 
-    <nav aria-label="Primary">
-      <ul>
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#portfolio">PORTFOLIO</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-      </ul>
-    </nav>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#portfolio">PORTFOLIO</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main id="main">
     <section id="hero" aria-labelledby="hero-heading">
-      <h1 id="hero-heading">YERR! I'm Mr. Santana</h1>
-      <p>I build mediocre software.</p>
-      <p>
-        <a class="btn" href="#portfolio">View Projects</a>
-        <a class="btn secondary" href="/resume.pdf"> Download resume</a>
-      </p>
+      <div class="container">
+        <h1 id="hero-heading">YERR! I'm Mr. Santana.</h1>
+        <p>I want build mediocre software.</p>
+        <!-- <p class="cta-row"> -->
+        <!-- <a class="btn secondary" href="#portfolio">View Projects</a> -->
+        <!-- <a class="btn secondary" href="/resume.pdf">Download resume</a> -->
+        <!-- </p> -->
+      </div>
     </section>
 
     <section id="about" aria-labelledby="about-heading">
-      <h2 id="about-heading">ABOUT</h2>
-      <figure>
-        <img src="/images/me.jpg" alt="Mr. Santana in NYC, coffee in hand" />
-        <figcaption>Based in NYC. Coffee powered.</figcaption>
-      </figure>
-      <p>Short bio about what you ship, the stack you enjoy, and how much you work.</p>
+      <div class="container">
+        <h2 id="about-heading">ABOUT ME</h2>
+        <figure>
+          <img src="images/me.png" alt="Mr. Santana in NYC, coffee in hand" />
+          <figcaption>Based in NYC. Coffee powered.</figcaption>
+        </figure>
+        <p>Short bio about what you ship, the stack you enjoy, and how much you work.</p>
+      </div>
     </section>
 
     <section id="portfolio" aria-labelledby="portfolio-heading">
-      <h2 id="portfolio-heading">PORTFOLIO</h2>
-      <ul>
-        <li>
-          <article>
-            <header>
-              <h3><a href="/project/demo-disc">PS1 Demo Disc Tribute</a></h3>
-              <p class="meta">C | OpenGL | 2025</p>
-            </header>
-            <figure>
-              <img src="/images/demo.jpg" alt="Screenshot of PS1-style demo" />
-              <figcaption>Retro vibes, modern pipeline</figcaption>
-            </figure>
-            <p>What it does, who it's for, result/impact.</p>
-            <footer>
-              <a href="https://github.com/mistersantana">Code</a>
-              <a href="https://github.com/mistersantana">Live</a>
-            </footer>
-          </article>
-        </li>
-        <!-- more <li><article>... -->
-      </ul>
+      <div class="container">
+        <h2 id="portfolio-heading">PORTFOLIO</h2>
+        <ul class="project-grid" role="list">
+          <li>
+            <article>
+              <header>
+                <h3><a href="/project/demo-disc">PS1 Demo Disc Tribute</a></h3>
+                <p class="meta">C | OpenGL | 2025</p>
+              </header>
+              <figure>
+                <img src="/images/demo.jpg" alt="Screenshot of PS1-style demo" />
+                <figcaption>Retro vibes, modern pipeline</figcaption>
+              </figure>
+              <p>What it does, who it's for, result/impact.</p>
+              <footer>
+                <a href="https://github.com/mistersantana">Code</a>
+                <a href="https://github.com/mistersantana">Live</a>
+              </footer>
+            </article>
+          </li>
+          <!-- more <li><article>... -->
+        </ul>
+      </div>
     </section>
 
     <section id="contact" aria-labelledby="contact-heading">
-      <h2 id="contact-heading">CONTACT ME</h2>
-      <form action="/api/contact" method="post">
-        <div>
-          <label for="name">Name</label>
-          <input id="name" name="name" autocomplete="name" required />
-        </div>
-        <div>
-          <label for="email">Email</label>
-          <input id="email" name="email" autocomplete="email" required />
-        </div>
-        <div>
-          <label for="message">Messages</label>
-          <textarea id="message" name="message" row="6" required></textarea>
-        </div>
-        <button type="submit">Send</button>
-      </form>
-      <p>Or email me at: <a href="mailto:yourmoms@myhouse.com">yourmoms@myhouse.com</a></p>
+      <div class="container">
+        <h2 id="contact-heading">CONTACT ME</h2>
+        <form action="/api/contact" method="post">
+          <div>
+            <label for="name">Name</label>
+            <input id="name" name="name" autocomplete="name" required />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" autocomplete="email" required />
+          </div>
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </div>
+          <button type="submit">Send</button>
+        </form>
+        <p>Or email me at: <a href="mailto:yourmoms@myhouse.com">yourmoms@myhouse.com</a></p>
+      </div>
     </section>
   </main>
 
   <aside aria-label="Quick links">
-    <ul>
-      <li><a href="https://github.com/mistersantana">Github</a></li>
-      <li><a href="https://linkedin.com">LinkedIn</a></li>
-    </ul>
+    <div class="container">
+      <ul>
+        <li><a href="https://github.com/mistersantana">Github</a></li>
+        <li><a href="https://linkedin.com">LinkedIn</a></li>
+      </ul>
+    </div>
   </aside>
 
   <footer>
-    <small>© 2025 Mr. Santana. All rights reserved.</small>
+    <div class="container">
+      <small>© 2025 Mr. Santana. All rights reserved.</small>
+    </div>
   </footer>
 </body>
 

@@ -1,3 +1,0 @@
-# TEST
-
-## LOREM IPSUM

@@ -1,7 +1,0 @@
-/* The secret paragraph is currently hidden */
-
-/* display:none hides the targeted id */
-
-#secret {
-  display: block;
-}
